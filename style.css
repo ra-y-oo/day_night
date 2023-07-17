@@ -1,0 +1,45 @@
+:root{
+    --day-btn: rgba(0, 126, 70, 0.5);
+    --night-btn: rgba(199, 204, 255, 0.1);
+    --day-txt: rgb(0, 232, 127);
+    --night-txt: rgba(199, 204, 255, 0.8);
+}
+.day{
+    --btn: var(--day-btn);
+    --txt: var(--day-txt);
+}
+.night{
+    --btn: var(--night-btn);
+    --txt: var(--night-txt);
+}
+body{
+    background-image: url(./img/day.jpg);
+    background-size: cover;
+    height: 100dvh;
+    background-position: center;
+
+    color: var(--txt);
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+}
+.content .time h1{
+    font-size: 5rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    padding: 10px 20px;
+    color: white;
+    width: 7rem;
+    background: var(--btn);
+
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
